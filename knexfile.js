@@ -2,11 +2,11 @@
 
 module.exports = {
   development: {
-    client: "sqlite3",
+    client: "pg",
     connection: "postgresql://localhost/iwspirits"
   },
   production: {
-    client: "postgresql",
+    client: "pg",
     connection: process.env.DATABASE_URL
   }
 };
